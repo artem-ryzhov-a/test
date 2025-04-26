@@ -29,7 +29,7 @@ function Workbench() {
     const [resAnswerUser, setResAnswerUser] = useState(null) // результат ответа пользователя (программа показывает как правильно был дан ответ)
     let [enableTree, setEnableTree] = useState(true); // отображение дерева
 
-
+    console.log("hellow");
     const handleOptionsClick = (option, arg) => {  // обработчик нажатия на кнопку опции
 
 
