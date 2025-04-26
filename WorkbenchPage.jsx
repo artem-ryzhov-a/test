@@ -105,7 +105,7 @@ function Workbench() {
     }
 
 
-
+    console.log("output");
     const draw = (nowStage, args) => {  // аналог handleBuildClick. Только закидывает в canvas сразу несколько фигур
         if (mod === 'learn') {
             const level = queryParams.get('level');
