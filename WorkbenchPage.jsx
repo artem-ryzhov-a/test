@@ -105,12 +105,9 @@ function Workbench() {
     }
 
 
-
+    console.log("output sladja");
     const draw = (nowStage, args) => {  // аналог handleBuildClick. Только закидывает в canvas сразу несколько фигур
         if (mod === 'learn') {
-            const level = queryParams.get('level');
-            const buildFunc = dictLevelFunc[level]
-            let resScenario, buildScenario, answer
             if (args) {
                 args = [nowStage, ...args]
                 let res = buildFunc(...args);
