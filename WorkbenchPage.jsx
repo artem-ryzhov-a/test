@@ -121,6 +121,12 @@ function Workbench() {
                 buildScenario = res[1]
                 answer = res[2]
             }
+            else {
+                let res = buildFunc(nowStage)
+                resScenario = res[0]
+                buildScenario = res[1]
+                answer = res[2]
+            }
             setanswerTrue(answer)  // задаёт правильное значение ответа уровня
             setScenario(resScenario)  // задаёт сценарий построения
             let arrShapes = []
