@@ -104,6 +104,9 @@ function Workbench() {
         draw(newNowStage, args);
     }
 
+    const testFunc = (test) => {
+        console.log("something");
+    }
 
     console.log("output");
     const draw = (nowStage, args) => {  // аналог handleBuildClick. Только закидывает в canvas сразу несколько фигур
@@ -114,12 +117,6 @@ function Workbench() {
             if (args) {
                 args = [nowStage, ...args]
                 let res = buildFunc(...args);
-                resScenario = res[0]
-                buildScenario = res[1]
-                answer = res[2]
-            }
-            else {
-                let res = buildFunc(nowStage)
                 resScenario = res[0]
                 buildScenario = res[1]
                 answer = res[2]
