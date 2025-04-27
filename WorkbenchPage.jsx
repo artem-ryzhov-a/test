@@ -104,6 +104,9 @@ function Workbench() {
         draw(newNowStage, args);
     }
 
+    const testFunc = (test) => {
+        console.log("something");
+    }
 
     console.log("output");
     const draw = (nowStage, args) => {  // аналог handleBuildClick. Только закидывает в canvas сразу несколько фигур
